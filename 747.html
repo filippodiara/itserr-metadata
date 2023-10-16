@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3D Object</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+	
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+  <script type="module" src="https://www.unpkg.com/@google/model-viewer@3.2.1/dist/model-viewer.min.js"></script>
+
+</head>
+
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<body>
+    <!-- Main Container -->
+    <div id="container">
+
+        <!-- Navbar container -->
+        <div id="navbar">
+            <div id="logo">
+                <img src="assets/logo.png" style="width: 600px" alt="logo">
+            </div>
+        </div>
+		
+		
+		
+		
+		     <div id="footer">
+            <div id="logo" class="tooltip">
+                <img src="assets/back.png" alt="logo">
+				<span class="tooltiptext">Go back</span>
+            </div>
+   
+   
+               <div id="logo2" class="tooltip">
+                <img src="assets/3d.png" alt="logo">
+				<span class="tooltiptext">3D Inspector</span>
+            </div>
+   
+        </div>
+
+        <!-- An aside -->
+        <!-- This is for holding the 3D object -->
+       
+
+        <!-- Content container -->
+        <!-- This is for holding some brief description about the 3D object -->
+        <div id="content">
+            <h3 style="font-size: 28px">Tablet - MAT 747</h3>
+			&nbsp
+            <p style="font-size: 22px">Metadata</p>
+            &nbsp
+			&nbsp
+			
+			<google-sheets-html-origin style="color: rgb(0, 0, 0);"><table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" cellpadding="0" dir="ltr" border="1" style="table-layout: fixed; font-size: 10pt; font-family: Verdana; width: 0px; border-collapse: collapse; border: none;">
+  <thead>
+    <tr style="height: 21px;">
+     
+    </tr>
+  </thead><colgroup><col width="186"><col width="531"></colgroup>
+  <tbody>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Finding Place&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Finding Place</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Iraq, Tell Jokha (Umma)&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">?</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Object Tyology&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Object Tyology</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Tablet&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">Tablet</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Object Dimension&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Object Dimension</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;mm 43 (height) x 40 (width) x 15 (depth)&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">mm 32 (height) x 30 (width) x 19 (depth)</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Material&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Material</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Clay&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">Clay</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Date&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Date</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;2100-2000 BC&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">1900-1600 BC</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Sealed&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Sealed</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Yes&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">No</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Text&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Text</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;https://cdli.mpiwg-berlin.mpg.de/artifacts/131820&quot;}" data-sheets-hyperlink="" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; text-decoration-line: underline; color: rgb(31, 62, 120);"><a class="in-cell-link" href="" target="_blank"></a></td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Content&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Content</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;administrative document &quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">legal document</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Literature&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: middle; font-family: Poppins; font-weight: bold;">Literature</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;- Boson, Giustino. 1936. Tavolette Cuneiformi Sumere, Degli Archivi Di Drehem e Di Djoha, Dell’ultima Dinastia Di Ur. Pubblicazioni Della Università Cattolica Del Sacro Cuore. Serie Dodecima: Scienze Orientali, Volume 2. Milano\n- Archi, Alfonso - Bergamini Giovanni - Pomponio Francesco. 1995. Testi Cuneiformi Neo-Sumerici Da Umma, Nn. 0413 - 0723. Parte I: I Testi. Parte II: Le Impronte Di Sigillo. Catalogo Del Museo Egizio Di Torino. Seria Seconda: Collezioni, Volume 8. Torino&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; overflow-wrap: break-word;">-</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Particular Signs&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Particular Signs</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;/&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">/</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Conservation Status&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Conservation Status</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Good&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">Damaged</td>
+    </tr>
+    <tr style="height: 21px;">
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Language&quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins; font-weight: bold;">Language</td>
+      <td data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Sumerian &quot;}" style="border: 1px solid rgb(204, 204, 204); overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Poppins;">-</td>
+    </tr>
+  </tbody>
+</table></google-sheets-html-origin>
+
+      
+    </div>
+	
+	
+	 <div id="aSide">
+
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <model-viewer camera-controls touch-action="pan-y" disable-zoom src="assets/747.glb"  camera-controls ar ios-src="assets/747.glb">
+            </model-viewer>
+        </div>
+	
+	
+</body>
+
+</html>
